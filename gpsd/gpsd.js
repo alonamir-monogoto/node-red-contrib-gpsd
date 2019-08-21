@@ -185,9 +185,9 @@ module.exports = function(RED) {
 				listener.disconnect(function() {
 					node.log('Disconnecting from gpsd on close of gpsd node') ;
 					listener = null ;
-					done() ;
 				}) ;
 			}
+			done();
 		});
 	}
 
